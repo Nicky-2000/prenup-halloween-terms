@@ -9,8 +9,8 @@ const Body = z.object({
 
 export async function GET(req: NextRequest) {
   try {
-    const sort = (req.nextUrl.searchParams.get("sort") ?? "recent") as "recent" | "liked";
-    const items = await db.list(sort);
+    const s = (req.nextUrl.searchParams.get("sort") ?? "recent") as "recent" | "green" | "red";
+    const items = await db.list(s);
     return NextResponse.json({ items });
   } catch (e) {
     console.error("GET /api/terms failed:", e);
@@ -35,9 +35,7 @@ export async function POST(req: NextRequest) {
     }
 
     const text = parsed.data.text.trim();
-    const rawName = (parsed.data.name ?? "Anonymous").trim();
-    const name = rawName.length ? rawName : "Anonymous";
-
+    const name = (parsed.data.name ?? "Anonymous").trim() || "Anonymous";
     const item = await db.create(text, name);
     return NextResponse.json({ item }, { status: 201 });
   } catch (e) {
