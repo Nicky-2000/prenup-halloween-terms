@@ -249,7 +249,7 @@ export default function Page() {
       </ul>
 
       <p className="pt-2 text-center text-xs text-gray-500">
-        ⚠️ This is for laughs, not legal advice.
+        ⚠️ This is not legal advice.
       </p>
     </main>
   );
