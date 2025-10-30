@@ -121,8 +121,8 @@ export default function Page() {
     <main className="mx-auto max-w-2xl p-6 space-y-5">
       <div className="rounded-2xl bg-gradient-to-r from-emerald-200/70 via-amber-200/60 to-rose-200/60 p-[1px] shadow-sm">
         <div className="rounded-2xl bg-white/90 p-5">
-          <h1 className="text-3xl font-extrabold tracking-tight">Nicky’s Silly Little Prenup</h1>
-          <p className="mt-1 text-sm text-gray-600">Green-flag it ✅ or call out the sus 🚩</p>
+          <h1 className="text-3xl font-extrabold tracking-tight">The Prenup: Additional Terms</h1>
+          <p className="mt-1 text-sm text-gray-600">Add a term, Green-flag it ✅ or call out the sus 🚩</p>
           <p className="mt-1 text-xs text-gray-600"><b>NOT LEGALLY BINDING</b></p>
 
         </div>
@@ -144,7 +144,7 @@ export default function Page() {
 
         <textarea
           className="w-full min-h-[110px] rounded-xl border p-3 text-[15px] leading-6 focus:outline-none focus:ring-2 focus:ring-emerald-300"
-          placeholder={`e.g., "No scrolling TikTok during kisses 😡",  "Must share french fries 🍟",  "Must enjoy being big spoon 😴"`}
+          placeholder={`e.g., "Chipmunks must leave the room before foreplay begins", "No scrolling TikTok during sex 😡",  "Must share french fries 🍟",  `}
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
