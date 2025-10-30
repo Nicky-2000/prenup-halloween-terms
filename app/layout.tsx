@@ -1,4 +1,5 @@
 // app/layout.tsx
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-background text-foreground antialiased">
         {children}
       </body>
+        <Analytics />
     </html>
   );
 }
