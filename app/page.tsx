@@ -211,7 +211,7 @@ export default function Page() {
 
                 <div className="mt-4 flex items-center justify-between">
                   <span className="text-xs text-gray-500">
-                    {(t.name ? `${t.name} · ` : "") + fmt(t.created_at)}
+                    {(t.name ? `Submitted By: ${t.name} · ` : "") + fmt(t.created_at)}
                   </span>
 
                   <div className="flex gap-2">
