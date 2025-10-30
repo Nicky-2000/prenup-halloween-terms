@@ -144,7 +144,7 @@ export default function Page() {
 
         <textarea
           className="w-full min-h-[110px] rounded-xl border p-3 text-[15px] leading-6 focus:outline-none focus:ring-2 focus:ring-emerald-300"
-          placeholder={`e.g., "Chipmunks must leave the room before foreplay begins", "No scrolling TikTok during sex 😡",  "Must share french fries 🍟",  `}
+          placeholder={`e.g., "No chipmunks during foreplay", "No scrolling TikTok during sex 😡",  "Must share french fries 🍟",  `}
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
